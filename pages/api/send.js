@@ -8,7 +8,7 @@ const send = cors(async (req, res) => {
 
   if (
     req.headers.origin === process.env.HOST ||
-    req.headers.origin === "https://barkat-3d-ville.com/"
+    req.headers.origin === "https://barkat-3d-ville.com"
   ) {
     try {
       await sgMail.send({
